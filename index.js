@@ -21,23 +21,16 @@
 
 
 function tribonacci(startingInput,n){
-  if (n===0) return [];
-  if (n===1) return [startingInput[0]];
   const arr = startingInput;
-  let count = 0;
-  let iCount = 0;
-  for (let i = 0; i < n; i++) {
-    if (iCount === 3) {
-      arr.push(count);
-      iCount = 0;
-      count = 0;
-      i -= 2;
-    }
-    iCount++;
-    count += arr[i];
+  if (n < arr.length) {
+    return arr.slice(0, n);
   }
-  return arr;
+  
+  for (let i = 2; i < n-1; i++) {
+      arr.push(arr[i] + arr[i-1] + arr[i-2]);
+  }
 
+  return arr;
 }
 
 
