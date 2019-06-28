@@ -21,7 +21,7 @@ describe('Basic Tests', function () {
     tribonacci([1,1,1],1).should.deep.equal([1]);
     tribonacci([300,200,100],0).should.deep.equal([]);
   });
-  
 
-  
+
+
 });
