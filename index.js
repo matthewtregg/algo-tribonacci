@@ -24,7 +24,16 @@
 
 
 function tribonacci(startingInput,n){  
-  // put your code here
+  const arr = startingInput;
+  
+  if(n < arr.length) {
+    return arr.slice(0,n);
+  }
+
+  for(let i=2; i<n-1; i++) {
+    arr.push(arr[i] + arr[i-1] + arr[i-2]);
+  }
+  return arr;
 }
   
    
