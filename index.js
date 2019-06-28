@@ -7,7 +7,7 @@
 // b) the length of the tribonacci series that should be returned
 // e.g. `tribonacci([1,1,1],10) ===> [1,1,1,3,5,9,17,31,57,105]`
 
-// NB please check the tests to make sure all cases are covered.  
+// NB please check the tests to make sure all cases are covered.
 
 // TESTING YOUR SOLUTION
 
@@ -20,14 +20,27 @@
 // changes to your forked repo and submit a pull request.
 
 
+function tribonacci(startingInput,n){
+  if (n===0) return [];
+  if (n===1) return [startingInput[0]];
+  const arr = startingInput;
+  let count = 0;
+  let iCount = 0;
+  for (let i = 0; i < n; i++) {
+    if (iCount === 3) {
+      arr.push(count);
+      iCount = 0;
+      count = 0;
+      i -= 2;
+    }
+    iCount++;
+    count += arr[i];
+  }
+  return arr;
 
-
-
-function tribonacci(startingInput,n){  
-  // put your code here
 }
-  
-   
+
+
 
 
 module.exports = tribonacci;
