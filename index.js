@@ -29,7 +29,7 @@ function tribonacci(startingInput,n){
 
   const nextNum = startingInput.reduce((a, b) => a + b);
   const result = [...startingInput, nextNum];
-  let final = result.slice();
+  const final = result.slice();
 
   while (final.length !== n) {
     let last3 = final.slice(-3);
