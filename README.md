@@ -12,7 +12,7 @@ Fork this repo and then `git clone` your forked repo to your computer.
 Once you're happy with your solution, `git push` and submit a pull request at
 `github.com/matthewtregg/Tribonacci`.
 
-## 2. Challeng
+## 2. Challenge
 
 ### 2.1. Testing your solution
 To test your solution, run `npm i` in the root directory
