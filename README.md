@@ -1,4 +1,6 @@
 # Algo Rithms Challenge // Tribonacci
+https://github.com/matthewtregg/algo-tribonacci
+
 
 - [1. Getting started](#1-getting-started)
 - [2. Challenge](#2-challenge)
