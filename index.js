@@ -7,10 +7,6 @@
 // b) the length of the tribonacci series that should be returned
 // e.g. `tribonacci([1,1,1],10) ===> [1,1,1,3,5,9,17,31,57,105]`
 
-// EXAMPLES
-
-
-
 // TESTING YOUR SOLUTION
 
 // To test your solution, run 'npm install' in the root directory
