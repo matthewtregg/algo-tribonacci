@@ -14,6 +14,9 @@ Once you're happy with your solution, `git push` and submit a pull request at
 
 ## 2. Challenge
 
+### 2.0 
+Recreate the tribonacci series a close relation to the fibonacci series. Create a function that creates a tribonacci series given the first three numbers and the length of the series. 
+
 ### 2.1. Testing your solution
 To test your solution, run `npm i` in the root directory
 and then run `npm t` to run the automated tests.
