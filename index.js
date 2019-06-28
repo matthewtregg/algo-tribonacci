@@ -24,20 +24,13 @@
 
 
 function tribonacci(startingInput,n){
-  if (n === 0) {
-    return [];
-  } else if (n === 1) {
-    return [startingInput[0]];
+  const arr = startingInput
+  if (n < arr.length) return arr.slice(0,n);
+
+  for (let i = 2; i < n - 1 ; i++) {
+    arr.push(arr[i] + arr[i-1] + arr[i-2]);
   }
-  let res = startingInput;
-  let newNum = res[res.length - 1] + res[res.length - 2] + res[res.length - 3];
-  res.push(newNum);
-  let i =0;
-  while (i < n - 4) {
-    tribonacci(res);
-    i++;
-  }
-  return res;
+  return arr;
 }
   
    
