@@ -1,4 +1,4 @@
-# Algo Rithms Challenge // Absolute value difference
+# Algo Rithms Challenge // Tribonacci
 
 - [1. Getting started](#1-getting-started)
 - [2. Challenge](#2-challenge)
