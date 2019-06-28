@@ -7,7 +7,7 @@
 // b) the length of the tribonacci series that should be returned
 // e.g. `tribonacci([1,1,1],10) ===> [1,1,1,3,5,9,17,31,57,105]`
 
-// NB please check the tests to make sure all cases are covered.  
+// NB please check the tests to make sure all cases are covered.
 
 // TESTING YOUR SOLUTION
 
@@ -23,11 +23,22 @@
 
 
 
-function tribonacci(startingInput,n){  
+function tribonacci(startingInput,n){
   // put your code here
+  let res = [];
+
+  for (let i = 0; i < n; i++) {
+    if (i < 3) {
+      res.push(startingInput[i])
+    } else {
+    let temp = res[i-1] + res[i-2] + res[i-3];
+    res.push(temp);
+  }
+    }
+  return res;
 }
-  
-   
+
+
 
 
 module.exports = tribonacci;
